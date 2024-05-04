@@ -5,15 +5,19 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using StackExchange.Redis;
 
 namespace Valuator.Pages;
 public class SummaryModel : PageModel
 {
+    private IDatabase _db;
+    private readonly IConnectionMultiplexer _redis;
     private readonly ILogger<SummaryModel> _logger;
 
-    public SummaryModel(ILogger<SummaryModel> logger)
+    public SummaryModel(ILogger<SummaryModel> logger, IConnectionMultiplexer redis)
     {
         _logger = logger;
+        _db = redis.GetDatabase();
     }
 
     public double Rank { get; set; }
@@ -23,6 +27,7 @@ public class SummaryModel : PageModel
     {
         _logger.LogDebug(id);
 
-        //TODO: проинициализировать свойства Rank и Similarity значениями из БД
+        Rank = (double)_db.StringGet("RANK-" + id);
+        Similarity = (double)_db.StringGet("SIMILARITY-" + id);
     }
 }
