@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\scripts"
+    "\\RankCalculator",
+    "\\RankCalculator\\bin",
+    "\\scripts",
+    "\\Valuator",
+    "\\Valuator\\Pages"
   ],
-  "SelectedNode": "\\scripts\\start.cmd",
+  "SelectedNode": "\\RankCalculator\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
