@@ -1,37 +1,41 @@
-﻿using NATS.Client;
-using Newtonsoft.Json;
+﻿﻿using NATS.Client;
+using NATS.Client.Internals.SimpleJSON;
 using StackExchange.Redis;
 using System.Text;
+using System.Text.Json;
 
-public class MessageModel
-{
-    public string Text { get; set; }
-    public string Id { get; set; }
-}
 
 class RankCalculator
 {
     private static readonly ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("127.0.0.1:6379");
     private static readonly IConnection natsConnection = new ConnectionFactory().CreateConnection("127.0.0.1:4222");
 
+    private const string SUBJECT = "RankCalculate";
+
     static void Main(string[] args)
     {
-        // Подписка на получение сообщений о тексте
-        natsConnection.SubscribeAsync("text.processing", (sender, args) =>
+        var rankCalculated = natsConnection.SubscribeAsync(SUBJECT, (sender, args) =>
         {
             var messageBytes = args.Message.Data;
+            string id = Encoding.UTF8.GetString(messageBytes);
 
-            var messageObject = JsonConvert.DeserializeObject<MessageModel>(Encoding.UTF8.GetString(messageBytes));
+            string text = redis.GetDatabase().StringGet("TEXT-" + id);
+            if (text != null)
+            { 
+                double rank = CalculateRank(text);
 
-            string text = messageObject.Text;
-            string id = messageObject.Id;
+                SaveRankToRedis(id, rank);
 
-            double rank = CalculateRank(text);
+                Info rankStruct = new Info();
+                rankStruct.Id = id;
+                rankStruct.Data = rank;
 
-            // Сохранение ранга в базе данных
-            SaveRankToRedis(id, rank);
+                string json= JsonSerializer.Serialize(rankStruct);
+                messageBytes = Encoding.UTF8.GetBytes(json);
+                natsConnection.Publish(SUBJECT + "_logger", messageBytes);
+            }
         });
-
+        rankCalculated.Start();
         // Ожидание сообщений
         Console.WriteLine("RankCalculator запущен. Ожидание сообщений...");
         Console.ReadLine();
@@ -61,5 +65,13 @@ class RankCalculator
         // Здесь код для сохранения ранга в Redis
         string rankKey = "RANK-" + id;
         db.StringSet(rankKey, rank);
+        Console.WriteLine("Сохранена запись: {0} {1}", rankKey, rank);
     }
+
+    
+}
+public class Info
+{
+    public string Id { get; set; }
+    public double Data { get; set; }
 }
