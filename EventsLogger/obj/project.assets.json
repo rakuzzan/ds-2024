@@ -1,0 +1,114 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "NATS.Client/1.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NATS.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NATS.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NATS.Client/1.1.5": {
+      "sha512": "fr0qHLrw5XgoNmeAkgHO1DymCpLDQG4M7bmBamRo/Nw+Bq79uWZlmwnUI81duZEvriwMCVxjAUEWwwRzcbAV5g==",
+      "type": "package",
+      "path": "nats.client/1.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net46/NATS.Client.dll",
+        "lib/net46/NATS.Client.xml",
+        "lib/netstandard1.6/NATS.Client.dll",
+        "lib/netstandard1.6/NATS.Client.xml",
+        "lib/netstandard2.0/NATS.Client.dll",
+        "lib/netstandard2.0/NATS.Client.xml",
+        "nats.client.1.1.5.nupkg.sha512",
+        "nats.client.nuspec",
+        "package-icon.png"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "NATS.Client >= 1.1.5"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\whoami\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\prog\\ds-2024\\EventsLogger\\EventsLogger.csproj",
+      "projectName": "EventsLogger",
+      "projectPath": "D:\\prog\\ds-2024\\EventsLogger\\EventsLogger.csproj",
+      "packagesPath": "C:\\Users\\whoami\\.nuget\\packages\\",
+      "outputPath": "D:\\prog\\ds-2024\\EventsLogger\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\whoami\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "NATS.Client": {
+            "target": "Package",
+            "version": "[1.1.5, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

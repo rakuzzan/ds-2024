@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "pHTyBCHdHBKYOWgyxe6Jd97LzFiGfEOEhJsON4DKg2xD6oKg3eSxpxT029LcyYPqTQLYRKXAKQ4eXeW1I0mEOg==",
+  "success": true,
+  "projectFilePath": "D:\\prog\\ds-2024\\EventsLogger\\EventsLogger.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\whoami\\.nuget\\packages\\nats.client\\1.1.5\\nats.client.1.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}
