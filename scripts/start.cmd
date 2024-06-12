@@ -1,6 +1,6 @@
 start start "" /D "D:\nats" nats-server.exe
 
-cd ../CalculateRank
+cd ../RankCalculator
 start "" dotnet run
 
 cd ..\Valuator\
