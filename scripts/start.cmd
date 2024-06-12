@@ -1,7 +1,7 @@
 start start "" /D "D:\nats" nats-server.exe
 
 cd ../RankCalculator
-start "" dotnet run
+start dotnet run
 
 cd ..\Valuator\
 start dotnet run --urls "http://localhost:5001"
