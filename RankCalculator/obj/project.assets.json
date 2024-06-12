@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\prog\\ds-2024\\RankCalculator\\RankCalculator.csproj",
+      "projectUniqueName": "D:\\ds-2024\\RankCalculator\\RankCalculator.csproj",
       "projectName": "RankCalculator",
-      "projectPath": "D:\\prog\\ds-2024\\RankCalculator\\RankCalculator.csproj",
+      "projectPath": "D:\\ds-2024\\RankCalculator\\RankCalculator.csproj",
       "packagesPath": "C:\\Users\\whoami\\.nuget\\packages\\",
-      "outputPath": "D:\\prog\\ds-2024\\RankCalculator\\obj\\",
+      "outputPath": "D:\\ds-2024\\RankCalculator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\whoami\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {

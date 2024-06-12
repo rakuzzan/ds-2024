@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FAKCauXFTjl4i667+rdjqvB/pGYvTvgGQGkR+A6Wj4PgOdOz0QMjyGO6tqFHL/3QU10TA3Iy6pOOjrj2l9nyeg==",
+  "dgSpecHash": "ml6ZrKtA+26gvcDRg/MEqpT/N4kWbZbQ3ZIXyi50HpNZhpUdaleTHqA/IARzIdklF087a2cwYIDh0uhuXLumrQ==",
   "success": true,
-  "projectFilePath": "D:\\prog\\ds-2024\\RankCalculator\\RankCalculator.csproj",
+  "projectFilePath": "D:\\ds-2024\\RankCalculator\\RankCalculator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
