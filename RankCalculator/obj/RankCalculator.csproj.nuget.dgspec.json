@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ds-2024\\RankCalculator\\RankCalculator.csproj": {}
+    "C:\\Users\\whoami\\source\\repos\\ds-2024\\RankCalculator\\RankCalculator.csproj": {}
   },
   "projects": {
-    "D:\\ds-2024\\RankCalculator\\RankCalculator.csproj": {
+    "C:\\Users\\whoami\\source\\repos\\ds-2024\\RankCalculator\\RankCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ds-2024\\RankCalculator\\RankCalculator.csproj",
+        "projectUniqueName": "C:\\Users\\whoami\\source\\repos\\ds-2024\\RankCalculator\\RankCalculator.csproj",
         "projectName": "RankCalculator",
-        "projectPath": "D:\\ds-2024\\RankCalculator\\RankCalculator.csproj",
+        "projectPath": "C:\\Users\\whoami\\source\\repos\\ds-2024\\RankCalculator\\RankCalculator.csproj",
         "packagesPath": "C:\\Users\\whoami\\.nuget\\packages\\",
-        "outputPath": "D:\\ds-2024\\RankCalculator\\obj\\",
+        "outputPath": "C:\\Users\\whoami\\source\\repos\\ds-2024\\RankCalculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\whoami\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "NATS.Client": {
+              "target": "Package",
+              "version": "[1.1.5, )"
+            },
+            "NRedisStack": {
+              "target": "Package",
+              "version": "[0.12.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
