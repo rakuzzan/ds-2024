@@ -1,0 +1,9 @@
+D:\prog\ds-2024\Valuator\obj\Debug\net8.0\Valuator.csproj.AssemblyReference.cache
+D:\prog\ds-2024\Valuator\obj\Debug\net8.0\Valuator.GeneratedMSBuildEditorConfig.editorconfig
+D:\prog\ds-2024\Valuator\obj\Debug\net8.0\Valuator.AssemblyInfoInputs.cache
+D:\prog\ds-2024\Valuator\obj\Debug\net8.0\Valuator.AssemblyInfo.cs
+D:\prog\ds-2024\Valuator\obj\Debug\net8.0\Valuator.csproj.CoreCompileInputs.cache
+D:\prog\ds-2024\Valuator\obj\Debug\net8.0\Valuator.MvcApplicationPartsAssemblyInfo.cache
+D:\prog\ds-2024\Valuator\obj\Debug\net8.0\Valuator.RazorAssemblyInfo.cache
+D:\prog\ds-2024\Valuator\obj\Debug\net8.0\Valuator.RazorAssemblyInfo.cs
+D:\prog\ds-2024\Valuator\obj\Debug\net8.0\Valuator.sourcelink.json

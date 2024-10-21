@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "H1AOxtDn+v0GXq5nTogvnS4TsAzMkOaGfWkCxW1oMwaKWfngw8kpy6emCw8LwA7R3OX++M2X4BmzUVc/F7Tkbw==",
+  "success": true,
+  "projectFilePath": "D:\\prog\\ds-2024\\Valuator\\Valuator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\whoami\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "C:\\Users\\whoami\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\whoami\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\whoami\\.nuget\\packages\\nettopologysuite\\2.5.0\\nettopologysuite.2.5.0.nupkg.sha512",
+    "C:\\Users\\whoami\\.nuget\\packages\\nredisstack\\0.12.0\\nredisstack.0.12.0.nupkg.sha512",
+    "C:\\Users\\whoami\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\whoami\\.nuget\\packages\\stackexchange.redis\\2.6.122\\stackexchange.redis.2.6.122.nupkg.sha512",
+    "C:\\Users\\whoami\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
+    "C:\\Users\\whoami\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}
